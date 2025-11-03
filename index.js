@@ -7,7 +7,10 @@ config({path:'./configuration/.env'})
 const app=express()
 
 //mongoose connect
-mongoose.connect(process.env.MONGO_DB)
+mongoose.connect(process.env.MONGO_DB,{
+    useNewUrlParser:true,
+    useUnifiedTopology:true
+})
 .then(()=>{
     console.log('server is connected')
 })
