@@ -85,6 +85,4 @@ app.delete('/api/user/:id',async(req,res)=>{
 })
 
 //listen
-app.listen(5000,()=>{
-    console.log("server is running http://localhost:5000")
-})
+module.exports = app;
