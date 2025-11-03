@@ -32,7 +32,9 @@ const userSchema=mongoose.Schema({
     contact:Number
 })
 const userModel=mongoose.model('EMP',userSchema)
-
+app.get('/',(req,res)=>{
+    res.json(hello)
+})
 //post
 app.post('/api/user',async(req,res)=>{
     let user={
