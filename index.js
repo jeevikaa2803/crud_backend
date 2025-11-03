@@ -36,7 +36,7 @@ const userSchema=mongoose.Schema({
 })
 const userModel=mongoose.model('EMP',userSchema)
 app.get('/',(req,res)=>{
-    res.json(hello)
+    res.json({"message":"good morning"})
 })
 //post
 app.post('/api/user',async(req,res)=>{
